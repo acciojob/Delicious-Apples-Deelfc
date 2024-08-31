@@ -1,125 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apple Varieties Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f5f5f5;
-        }
-        .container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        .product__photo {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .photo-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-        .photo-main > img {
-            width: 300px;
-            height: auto;
-            border-radius: 10px;
-            border: 2px solid #ccc;
-            margin-bottom: 10px;
-        }
-        .photo-album > ul {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-        }
-        .photo-album > ul > li {
-            margin: 0 10px;
-        }
-        .photo-album > ul > li > img {
-            width: 100px;
-            height: auto;
-            border-radius: 5px;
-            border: 1px solid #ccc;
-        }
-        .price {
-            font-size: 24px;
-            color: #333;
-            margin: 20px 0;
-        }
-        .variant {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            margin: 20px 0;
-        }
-        .variant img {
-            width: 50px;
-            height: auto;
-            border-radius: 50%;
-            cursor: pointer;
-            border: 2px solid transparent;
-        }
-        .variant img:hover {
-            border: 2px solid #000;
-        }
-        .description {
-            width: 80%;
-            max-width: 600px;
-            margin: 20px 0;
-            text-align: center;
-        }
-        .add-to-cart {
-            display: inline-block;
-            padding: 10px 20px;
-            background-color: #28a745;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .add-to-cart:hover {
-            background-color: #218838;
-        }
-    </style>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/styles.css">
 </head>
+
 <body>
-    <div class="container">
-        <div class="product__photo">
-            <div class="photo-container">
-                <div class="photo-main">
-                    <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple">
-                </div>
-                <div class="photo-album">
-                    <ul>
-                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple"></li>
-                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="Yellow Apple"></li>
-                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="Orange Apple"></li>
-                        <li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="Red Apple"></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="price">$7.93</div>
-        <div class="variant">
-            <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png" alt="Green Apple">
-            <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png" alt="Yellow Apple">
-            <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png" alt="Orange Apple">
-            <img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png" alt="Red Apple">
-        </div>
-        <div class="description">
-            <h2>BENEFITS</h2>
-            <p>Apples are incredibly nutritious, providing essential vitamins, minerals, and antioxidants. They can aid in weight loss, improve heart health, and reduce the risk of various diseases. Enjoy the crunchy, sweet, and tangy flavor of apples, a perfect snack for any time of the day.</p>
-        </div>
-        <a href="#" class="add-to-cart">ADD TO CART</a>
-    </div>
+	<div class="poster product">
+		<div class="heading">Delicious Apples</div>
+		<div class="small-poster">
+			<div>
+				<i class="fa-solid fa-share-nodes"></i>
+				<!-- <i class="fa-regular fa-heart"></i> -->
+			</div>
+			<div class="apple photo-main product__photo">
+				<img src="https://www.pngall.com/wp-content/uploads/15/Green-Apple-PNG-Images.png" class="apple-left">
+			</div>
+			<div class="variant photo-album photo-container">
+				<ul>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png"></li>
+				</ul>	
+			</div>
+		</div>
+		<div class="right">
+			<div class="price">Rs. <a class="amount">7.93</a></div>
+			<div class="variant">
+				<ul>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302064/codepen/delicious-apples/green-apple2.png"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302752/codepen/delicious-apples/yellow-apple.png"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302427/codepen/delicious-apples/orange-apple.png"></li>
+					<li><img src="https://res.cloudinary.com/john-mantas/image/upload/v1537302285/codepen/delicious-apples/red-apple.png"></li>
+				</ul>			
+				
+			</div>
+			<div class="description">
+				<h2>BENEFITS</h2>
+				<ul>
+					<li>Apples are neutricious</li>
+					<li>Apples may be good for weight loss</li>
+					<li>Apples may be good for bone health</li>
+					<li>They're linked to lowest risk of diabetes</li>
+				</ul>
+			</div>
+			<button class="add-to-cart">ADD TO CART</button>
+		</div>		
+	</div>
 </body>
+
 </html>
